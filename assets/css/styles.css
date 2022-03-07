@@ -15,9 +15,14 @@
 .navbar{
   position: fixed;
   width: 100%;
-  background: #3F826D;
+  /* background: #3F826D; */
   padding: 10px 0;
   font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  padding:15px 0;
+  background: #3F826D;
 }
 .navbar .max-width{
   display: flex;
@@ -29,13 +34,63 @@
   font-size: 35px;
   font-weight: 500;
 }
+.navbar .logo a span{
+  color: #131515;
+}
+.navbar.sticky .menu a{
+  color: #fff
+}
+.navbar.sticky .logo a{
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.navbar.sticky .menu li a:hover{
+  color: #fff;
+}
 .navbar .menu li{
   list-style: none;
   display: inline-block;
 }
-.navbar .menu li a {
+.navbar .menu li a{
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color: #3F826D;
+}
+
+/* home section styling */
+
+.home{
+  display: flex;
+
+  /* come back to this */
+  background: url('img/coffeecup.jpg') no-repeat center;
+  background: #131515;
+  height: 100vh;
+  min-height: 500px;
+  font-family: 'Poppins', sans-serif;
+}
+.home .max-width{
+  margin: auto 0 auto 40px;
+  color: #fff;
+}
+.home .home-content .text-1{
+  font-size: 27px;
+}
+.home .home-content .text-2{
+  font-size: 70px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3{
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span{
+  color: #3F826D;
+  font-weight: 500;
 }
