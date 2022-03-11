@@ -61,15 +61,23 @@
 .navbar .menu li a:hover{
   color: #3F826D;
 }
+/* menu btn styling */
+.menu-btn{
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
 
 /* home section styling */
 
 .home{
   display: flex;
-
-  /* come back to this */
-  background: url('img/coffeecup.jpg') no-repeat center;
-  background: #131515;
+  /*image will change*/
+  background: url('../img/moon.jpg') no-repeat center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   height: 100vh;
   min-height: 500px;
   font-family: 'Poppins', sans-serif;
@@ -94,3 +102,33 @@
   color: #3F826D;
   font-weight: 500;
 }
+
+/* responsive media query start */
+@media (max-width: 950px){
+  .max-width{
+    padding: 0 50px;
+  }
+  .menu-btn{
+    display: block;
+    z-index: 999;
+  }
+  .navbar .menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #131515;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .navbar .menu li{
+    display: block;
+  }
+  navbar .menu li a{
+    display: inline-block;
+    margin: 20px;
+    font-size: 25px;
+    
+  }
+} 
