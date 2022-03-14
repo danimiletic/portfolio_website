@@ -6,4 +6,8 @@ $(document).ready(function(){
       $('.navbar').removeClass("sticky");
     }
   })
+  // toggle menu/navbar
+  $('.menu-btn').click(function(){
+    $('.navbar .menu').toggleClass("active");
+  });
 });

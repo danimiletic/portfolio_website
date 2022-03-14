@@ -74,7 +74,7 @@
 .home{
   display: flex;
   /*image will change*/
-  background: url('../img/moon.jpg') no-repeat center;
+  background: url('../img/dark.jpg') no-repeat center;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -116,11 +116,14 @@
     position: fixed;
     height: 100vh;
     width: 100%;
-    left: 0;
+    left: -100%;
     top: 0;
-    background: #131515;
+    background: black;
     text-align: center;
     padding-top: 80px;
+  }
+  .navbar .menu.active{
+    left: 0;
   }
   .navbar .menu li{
     display: block;
