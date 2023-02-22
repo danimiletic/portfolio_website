@@ -102,6 +102,21 @@
   color: #3F826D;
   font-weight: 500;
 }
+.home .home-content a{
+  display: inline-block;
+  background:  #3F826D;
+  color: white;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+  border: 1px solid #3F826D;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+  color: white;
+  background: none;
+}
 
 /* responsive media query start */
 @media (max-width: 950px){
